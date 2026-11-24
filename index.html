@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa de playa Los Corales 387 · Punta Negra</title>
+<meta name="description" content="Casa de playa en Punta Negra para hasta 18 huéspedes: piscina privada, terraza de 90 m² con parrilla y vista al mar, 5 dormitorios, a 5 minutos a pie de la playa. Reserva directa por WhatsApp.">
+<!-- Web publicada en GitHub Pages: https://guzpon357.github.io/loscorales387/ -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Casa de playa con piscina para 18 personas · Punta Negra">
+<meta property="og:description" content="5 dormitorios, piscina privada, terraza de 90 m² con parrilla y vista al mar. A 5 min a pie de la playa. Reserva directa.">
+<meta property="og:image" content="https://guzpon357.github.io/loscorales387/img/og-cover.jpg">
+<meta property="og:url" content="https://guzpon357.github.io/loscorales387/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* VOICE: cálido y directo, como un buen anfitrión que explica su casa sin exagerar.
+   IDEA: el aviso de una casa de playa de verano: foto grande, datos claros, una sola acción (WhatsApp).
+   PICTURE: la piscina real a pantalla completa; luego terraza, parrilla y dormitorios.
+   COLOUR and TYPE: océano profundo #0B4F5C dominante, arena clara de fondo, coral #E5674E como acento (Los Corales). Manrope.
+   LAYOUT: bandas a todo el ancho, contenido hasta 1180px, cotizador junto a la tabla de tarifas, barra fija de reserva en móvil. */
+:root{color-scheme:light dark;
+--bg:light-dark(#FBF8F3,#0C1A1E);--band:light-dark(#F1EADF,#122429);--card:light-dark(#FFFFFF,#162B31);
+--ink:light-dark(#14262B,#EAF1F1);--soft:light-dark(#4E6268,#A9BCBF);--line:light-dark(#E2D8CA,#25404A);
+--sea:#0B4F5C;--sea2:light-dark(#0B4F5C,#7FC6CF);--coral:#E5674E;--coralInk:light-dark(#B8432D,#F39A86);--wa:#1FA855}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:clip}
+img{display:block;max-width:100%}
+[hidden]{display:none!important}
+a{color:inherit}
+h1,h2,h3{line-height:1.08;text-wrap:balance;margin:0}
+h2{font-size:clamp(28px,3.6vw,42px);font-weight:800;letter-spacing:-.02em}
+h3{font-size:19px;font-weight:700}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto}
+.band{padding:clamp(44px,6vw,88px) max(5vw,16px)}
+.alt{background:var(--band)}
+.deep{background:var(--sea);color:#EAF4F4}
+.lead{font-size:17px;color:var(--soft);max-width:62ch;margin-top:14px}
+.deep .lead{color:#BFD9DC}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font-weight:700;text-decoration:none;border:0;cursor:pointer;font:inherit;font-weight:700;white-space:nowrap}
+.btn:focus-visible,button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.wa{background:var(--wa);color:#fff}.wa:hover{filter:brightness(1.07)}
+.ghost{background:rgba(255,255,255,.14);color:#fff;border:1.5px solid rgba(255,255,255,.6)}
+.ab{background:var(--card);color:var(--ink);border:1.5px solid var(--line)}
+.ico{width:20px;height:20px;flex:none}
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:20px;padding:10px max(5vw,16px);max-width:none}
+.logo{font-weight:800;font-size:18px;text-decoration:none;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.logo svg{width:26px;height:26px}
+.links{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.links a{text-decoration:none;font-weight:600;font-size:15px;padding:10px 12px;border-radius:8px;color:var(--soft);white-space:nowrap}
+.links a:hover{color:var(--ink);background:var(--band)}
+nav .wa{min-height:42px;padding:0 18px}
+@media(max-width:860px){.links{display:none}nav .wa{margin-left:auto}}
+/* hero */
+.hero{position:relative;min-height:min(86vh,760px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%;animation:zoom 18s ease-out both}
+@keyframes zoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.hero>img{animation:none}html{scroll-behavior:auto}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,30,36,.15) 0%,rgba(6,30,36,.25) 40%,rgba(6,30,36,.86) 100%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding:0 max(5vw,16px) clamp(32px,6vw,64px)}
+.place{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:6px 14px;border-radius:999px;font-weight:600;font-size:14px;backdrop-filter:blur(6px)}
+.hero h1{font-size:clamp(34px,5.4vw,60px);font-weight:800;letter-spacing:-.025em;max-width:17ch;margin:16px 0 14px}
+.hero p{font-size:clamp(16px,1.8vw,19px);max-width:56ch;color:#E3EFF0}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.rating{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;font-size:14px;color:#D5E6E8}
+.rating b{color:#fff}
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
+.fact{background:var(--card);padding:20px 16px;text-align:center}
+.fact svg{width:28px;height:28px;color:var(--coral);margin:0 auto 6px}
+.fact b{display:block;font-size:22px;font-weight:800}
+.fact span{font-size:14px;color:var(--soft)}
+@media(max-width:900px){.facts{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:480px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* experience */
+.exp{display:grid;grid-template-columns:1.25fr 1fr;gap:18px;margin-top:34px}
+.exp figure{margin:0;position:relative;border-radius:18px;overflow:hidden;background:var(--line)}
+.exp figure img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.exp .big{grid-row:span 2}.exp .big img{aspect-ratio:auto;min-height:100%}
+.exp figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 18px 16px;background:linear-gradient(transparent,rgba(5,25,30,.85));color:#fff}
+.exp figcaption b{display:block;font-size:18px}
+.exp figcaption span{font-size:14px;color:#D2E3E5}
+@media(max-width:760px){.exp{grid-template-columns:1fr}.exp .big{grid-row:auto}.exp .big img{aspect-ratio:4/3}}
+/* gallery */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 18px}
+.tabs button{min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:600;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--sea);border-color:var(--sea);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.grid button{padding:0;border:0;border-radius:12px;overflow:hidden;cursor:zoom-in;background:var(--line);aspect-ratio:4/3}
+.grid img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.grid button:hover img{transform:scale(1.04)}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(4,16,19,.94);display:none;flex-direction:column;align-items:center;justify-content:center;padding:16px}
+.lb.on{display:flex}
+.lb img{max-height:78vh;max-width:min(1200px,100%);border-radius:10px;object-fit:contain}
+.lb p{color:#DDE9EA;margin-top:12px;font-weight:600;text-align:center}
+.lb .ctl{display:flex;gap:10px;margin-top:14px}
+.lb button{min-width:48px;min-height:48px;border-radius:999px;border:1.5px solid rgba(255,255,255,.5);background:transparent;color:#fff;font:inherit;font-weight:700;cursor:pointer;padding:0 16px}
+/* rooms */
+.rooms{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:16px;margin-top:30px}
+.room{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.room img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.room div{padding:16px 16px 18px;display:grid;gap:6px}
+.room small{color:var(--soft);font-size:14px}
+.pill{justify-self:start;background:color-mix(in srgb,var(--coral) 14%,transparent);color:var(--coralInk);font-weight:700;font-size:13px;padding:3px 10px;border-radius:999px}
+.note{font-size:14px;color:var(--soft);margin-top:16px}
+/* amenities */
+.am{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:26px 34px;margin-top:30px}
+.am h3{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.am h3 svg{width:24px;height:24px;color:var(--coral)}
+.am ul{margin:0;padding:0;list-style:none;display:grid;gap:7px}
+.am li{padding-left:24px;position:relative}
+.am li::before{content:"";position:absolute;left:2px;top:.62em;width:10px;height:6px;border-left:2px solid var(--sea2);border-bottom:2px solid var(--sea2);transform:rotate(-45deg)}
+.ideal{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.ideal span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);padding:8px 16px;border-radius:999px;font-weight:600;font-size:15px}
+/* prices */
+.price{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;margin-top:30px;align-items:start}
+@media(max-width:880px){.price{grid-template-columns:1fr}}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line)}
+th{font-size:14px;color:var(--soft);font-weight:700;background:var(--band)}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.n{font-weight:800;font-size:18px}
+tr:last-child td{border-bottom:0}
+.perks{display:grid;gap:8px;margin-top:18px;padding:0;list-style:none}
+.perks li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+.perks b{color:var(--coralInk)}
+.calc{background:var(--sea);color:#fff;border-radius:20px;padding:24px;display:grid;gap:14px}
+.calc h3{font-size:21px}
+.calc label{display:grid;gap:6px;font-weight:600;font-size:14px;color:#CFE3E5}
+.calc input,.calc select{min-height:48px;border-radius:12px;border:0;padding:0 14px;font:inherit;font-size:16px;background:#fff;color:#14262B;width:100%}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.out{background:rgba(255,255,255,.1);border-radius:14px;padding:16px}
+.out .t{font-size:clamp(30px,4vw,40px);font-weight:800;line-height:1.1;white-space:nowrap}
+.out small{display:block;color:#CFE3E5;font-size:14px;margin-top:4px}
+.out .warn{color:#FFD2C7;font-weight:600;margin-top:8px;font-size:14px}
+.calc .wa{justify-content:center}
+/* location */
+.loc{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:30px;align-items:center}
+@media(max-width:820px){.loc{grid-template-columns:1fr}}
+.loc img{border-radius:18px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.dist{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.dist li{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.dist svg{width:24px;height:24px;color:var(--coral);flex:none;margin-top:2px}
+.dist b{display:block}
+.dist span{color:var(--soft);font-size:15px}
+/* rules, reviews, host */
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:22px;margin-top:30px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.panel ul{margin:12px 0 0;padding-left:20px;display:grid;gap:7px}
+.score{display:flex;align-items:baseline;gap:10px;margin-top:6px}
+.score b{font-size:48px;font-weight:800;line-height:1}
+.bars{display:grid;gap:10px;margin-top:16px}
+.bar{display:grid;grid-template-columns:9em 1fr 2.6em;gap:10px;align-items:center;font-size:15px}
+.bar i{height:8px;border-radius:9px;background:var(--line);overflow:hidden}
+.bar i u{display:block;height:100%;background:var(--coral)}
+.bar em{font-style:normal;font-weight:700;text-align:right}
+.host{display:flex;gap:16px;align-items:center;margin-bottom:12px}
+.av{width:64px;height:64px;border-radius:50%;background:var(--sea);color:#fff;display:grid;place-items:center;font-weight:800;font-size:24px;flex:none}
+/* faq */
+.faq{margin-top:26px;display:grid;gap:10px;max-width:860px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px}
+summary{cursor:pointer;padding:16px 20px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px;min-height:44px}
+summary::after{content:"+";font-size:22px;line-height:1;color:var(--coral)}
+details[open] summary::after{content:"–"}
+details p{padding:0 20px 18px;color:var(--soft)}
+/* closing + footer */
+.close{text-align:center}
+.close .cta{justify-content:center}
+footer{padding:28px max(5vw,16px) 96px;font-size:14px;color:var(--soft);border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between}
+.bar-m{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--card);border-top:1px solid var(--line);box-shadow:0 -6px 24px rgba(0,0,0,.08)}
+.bar-m div{line-height:1.25;font-size:14px;color:var(--soft)}
+.bar-m b{display:block;color:var(--ink);font-size:16px}
+.bar-m .wa{margin-left:auto;min-height:46px}
+@media(max-width:760px){.bar-m{display:flex}}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-weight:600;opacity:0;transition:opacity .3s;pointer-events:none;z-index:60}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.7-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></symbol>
+<symbol id="i-pool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 17c2 0 2-1.5 4-1.5S8 17 10 17s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 21c2 0 2-1.5 4-1.5S8 21 10 21s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M8 14V5a2 2 0 0 1 4 0M16 14V5a2 2 0 0 0-4 0M8 8h8M8 11.5h8"/></symbol>
+<symbol id="i-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 19V6M3 15h18v4M21 15v-3a3 3 0 0 0-3-3h-7v6M7 12.5a1.5 1.5 0 1 0 0-.01"/></symbol>
+<symbol id="i-people" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M16 5.2a3 3 0 0 1 0 5.6M18 14.8c1.8.6 3 2.4 3 5.2"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 18h16M7 18a5 5 0 0 1 10 0M12 6V3M5.6 9.6 3.5 7.5M18.4 9.6l2.1-2.1M2 21h20"/></symbol>
+<symbol id="i-fire" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-8.5Z"/></symbol>
+<symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16v3M19 16v3M3 16h18v-4l-2-5H5l-2 5Z M3 12h18"/><circle cx="7.5" cy="14" r=".6"/><circle cx="16.5" cy="14" r=".6"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+<symbol id="i-walk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="4" r="1.8"/><path d="m9 21 2.5-6 2.5 2v4M7 12l2-4 4 1 2 3 3 1M11.5 15 10 8"/></symbol>
+<symbol id="i-road" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 3 4 21M16 3l4 18M12 4v3M12 11v3M12 18v2"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 11 12 4l9 7M5 10v10h14V10M10 20v-5h4v5"/></symbol>
+<symbol id="i-pot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 10h16v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4ZM2 10h2M20 10h2M9 6.5c0-1 1-1 1-2M14 6.5c0-1 1-1 1-2"/></symbol>
+<symbol id="i-game" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="m12 7 3 2.2-1.1 3.6h-3.8L9 9.2Z"/></symbol>
+<symbol id="i-wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 9a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16a5 5 0 0 1 6 0"/><circle cx="12" cy="19.2" r=".8" fill="currentColor"/></symbol>
+<symbol id="i-shell" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#E5674E"/><path d="M8 20c2-7 5-11 8-11s6 4 8 11c-2.5 1.6-5.2 2.4-8 2.4S10.5 21.6 8 20Z" fill="#fff"/><path d="M16 10v12M12.5 12l1.5 10M19.5 12 18 22" stroke="#E5674E" stroke-width="1.3"/></symbol>
+</svg>
+
+<nav>
+ <div class="wrap">
+  <a class="logo" href="#inicio"><svg><use href="#i-shell"/></svg>Los Corales 387</a>
+  <div class="links">
+   <a href="#casa">La casa</a><a href="#galeria">Fotos</a><a href="#dormitorios">Dormitorios</a><a href="#incluye">Qué incluye</a><a href="#tarifas">Tarifas</a><a href="#ubicacion">Ubicación</a><a href="#preguntas">Preguntas</a>
+  </div>
+  <a class="btn wa js-wa" href="#"><svg class="ico"><use href="#i-wa"/></svg>Reservar</a>
+ </div>
+</nav>
+
+<header class="hero" id="inicio">
+ <img src="img/hero-piscina.jpg" alt="Piscina privada de la casa Los Corales 387 con tumbonas y sombrilla" fetchpriority="high">
+ <div class="wrap">
+  <span class="place"><svg class="ico"><use href="#i-pin"/></svg>Punta Negra · Playas del sur de Lima</span>
+  <h1>Casa de playa con piscina para 18 personas</h1>
+  <p>Cinco dormitorios, piscina privada y una terraza de 90 m² con parrilla y vista al mar, a 5 minutos a pie de la playa El Revés. Ideal para disfrutar el verano en familia o con amigos.</p>
+  <div class="cta">
+   <a class="btn wa js-wa" href="#"><svg class="ico"><use href="#i-wa"/></svg>Consultar fechas por WhatsApp</a>
+   <a class="btn ghost" href="#galeria">Ver fotos de la casa</a>
+  </div>
+  <div class="rating"><span><b>★ 4.76</b> en Airbnb · 25 reseñas de la casa</span><span>Anfitrión con <b>97 evaluaciones</b> (4.8 ★) y 9 años de experiencia</span><span>Anfitrión que recibe personalmente</span></div>
+ </div>
+</header>
+
+<section class="facts" aria-label="Datos principales">
+ <div class="fact"><svg><use href="#i-people"/></svg><b>18</b><span>huéspedes</span></div>
+ <div class="fact"><svg><use href="#i-bed"/></svg><b>5</b><span>dormitorios</span></div>
+ <div class="fact"><svg><use href="#i-home"/></svg><b>5</b><span>baños completos, más 2 de visita</span></div>
+ <div class="fact"><svg><use href="#i-pool"/></svg><b>Piscina</b><span>privada</span></div>
+ <div class="fact"><svg><use href="#i-fire"/></svg><b>90 m²</b><span>terraza con parrilla</span></div>
+ <div class="fact"><svg><use href="#i-walk"/></svg><b>5 min</b><span>a pie de la playa</span></div>
+</section>
+
+<section class="band" id="casa">
+ <div class="wrap">
+  <h2>Una casa pensada para estar todos juntos</h2>
+  <p class="lead">Durante el día, la vida se hace alrededor de la piscina y las hamacas. Al atardecer, todos suben a la terraza: hay parrilla, mesa para el grupo completo, zona lounge bajo la pérgola y vista al mar. Es una casa independiente, sin condominio, con espacio suficiente para que nadie se sienta apretado.</p>
+  <div class="exp">
+   <figure class="big"><img src="img/terraza-mar.jpg" alt="Terraza con toldo, mesa grande y vista al mar" loading="lazy"><figcaption><b>Terraza de 90 m² con vista al mar</b><span>Mesa para el grupo, toldo y zona de sol</span></figcaption></figure>
+   <figure><img src="img/parrilla.jpg" alt="Parrilla de ladrillo con mesón y mesa redonda" loading="lazy"><figcaption><b>Parrilla y mesón</b><span>Para la carne del domingo</span></figcaption></figure>
+   <figure><img src="img/terraza-lounge.jpg" alt="Sillones bajo la pérgola de madera" loading="lazy"><figcaption><b>Lounge bajo la pérgola</b><span>Sombra, brisa y conversación</span></figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="band alt" id="galeria">
+ <div class="wrap">
+  <h2>Recorre la casa</h2>
+  <p class="lead">Fotos reales de la casa. Toca cualquier foto para verla en grande.</p>
+  <div class="tabs" role="group" aria-label="Filtrar fotos" id="tabs"></div>
+  <div class="grid" id="grid"></div>
+ </div>
+</section>
+
+<section class="band" id="dormitorios">
+ <div class="wrap">
+  <h2>Cinco dormitorios, cuatro con baño propio</h2>
+  <p class="lead">Ropa de cama, almohadas y frazadas incluidas. Todos los baños tienen agua caliente.</p>
+  <div class="rooms" id="rooms"></div>
+  <p class="note">Además: baño de visita en el primer piso y medio baño junto a la piscina.</p>
+ </div>
+</section>
+
+<section class="band deep">
+ <div class="wrap">
+  <h2>Ideal para</h2>
+  <div class="ideal">
+   <span>Vacaciones familiares</span><span>Grupos de amigos</span><span>Fines de semana largos</span><span>Reencuentros y cumpleaños tranquilos</span><span>Estadías de una semana o más</span><span>Teletrabajo cerca del mar</span><span>Escapadas fuera de temporada</span>
+  </div>
+ </div>
+</section>
+
+<section class="band" id="incluye">
+ <div class="wrap">
+  <h2>Qué incluye la casa</h2>
+  <div class="am">
+   <div><h3><svg><use href="#i-sun"/></svg>Exteriores</h3><ul><li>Piscina privada con cascada</li><li>Tumbonas y sombrilla</li><li>Terraza de 90 m² con pérgola y toldo</li><li>Parrilla de ladrillo y mesón</li><li>Hamacas y columpios</li><li>Jardín interior</li></ul></div>
+   <div><h3><svg><use href="#i-pot"/></svg>Cocina y comedor</h3><ul><li>Refrigeradora y cocina con horno</li><li>Microondas, licuadora, hervidor y cafetera</li><li>Ollas, sartenes y utensilios</li><li>Vajilla, vasos, copas y cubiertos</li><li>Comedor principal para 8 y mesa grande en la terraza</li></ul></div>
+   <div><h3><svg><use href="#i-game"/></svg>Entretenimiento</h3><ul><li>Fulbito de mano</li><li>Juego de sapo</li><li>3 Smart TV (use sus propias cuentas de streaming)</li><li>Equipo de sonido</li><li>Juegos de mesa en la sala</li></ul></div>
+   <div><h3><svg><use href="#i-wifi"/></svg>Comodidades</h3><ul><li>Wi-Fi de fibra óptica</li><li>Lavadora y plancha</li><li>Ventiladores</li><li>Agua caliente en todos los baños</li><li>Jabón y papel higiénico</li><li>Ropa de cama y frazadas</li></ul></div>
+   <div><h3><svg><use href="#i-car"/></svg>Llegada y estacionamiento</h3><ul><li>1 cochera techada</li><li>Espacio adicional frente a la casa</li><li>El anfitrión le recibe y entrega las llaves</li><li>Casa independiente, sin condominio</li></ul></div>
+  </div>
+  <p class="note">Le recomendamos traer toallas de playa y secadora de cabello.</p>
+ </div>
+</section>
+
+<section class="band alt" id="tarifas">
+ <div class="wrap">
+  <h2>Tarifas de reserva directa</h2>
+  <p class="lead">Precio por noche por la casa completa, con 10 huéspedes incluidos. Desde el huésped 11 se suman S/ 45 por persona por noche, hasta un máximo de 18.</p>
+  <div class="price">
+   <div>
+    <table>
+     <thead><tr><th>Temporada</th><th class="n">Dom. a jue.</th><th class="n">Vie. y sáb.</th><th class="n">Mínimo</th></tr></thead>
+     <tbody>
+      <tr><td>Noviembre</td><td class="n">S/ 540</td><td class="n">S/ 720</td><td class="n">2 noches</td></tr>
+      <tr><td>Diciembre</td><td class="n">S/ 780</td><td class="n">S/ 1,130</td><td class="n">2 noches</td></tr>
+      <tr><td>Enero a marzo</td><td class="n">S/ 860</td><td class="n">S/ 1,180</td><td class="n">2 noches</td></tr>
+      <tr><td>Abril</td><td class="n">S/ 650</td><td class="n">S/ 800</td><td class="n">2 noches</td></tr>
+     </tbody>
+    </table>
+    <ul class="perks">
+     <li><b>Mejor precio reservando directo:</b> alrededor de 10 % menos que en plataformas, y aún más con grupos grandes.</li>
+     <li>Con 18 huéspedes, un sábado de verano sale a <b>unos S/ 86 por persona</b>.</li>
+     <li><b>10 % de descuento</b> en estadías de una semana o más. <b>20 %</b> en estadías de un mes o más.</li>
+     <li>Año Nuevo, Semana Santa y feriados largos tienen tarifa especial. Consulte por WhatsApp.</li>
+    </ul>
+   </div>
+   <form class="calc" id="calc" novalidate>
+    <h3>Calcule su estadía</h3>
+    <div class="row2">
+     <label>Llegada<input type="date" id="in" required></label>
+     <label>Salida<input type="date" id="out" required></label>
+    </div>
+    <label>Número de huéspedes<select id="pax"></select></label>
+    <div class="out" id="res" aria-live="polite"><div class="t">—</div><small>Elija sus fechas para ver el total estimado.</small></div>
+    <a class="btn wa" id="send" href="#"><svg class="ico"><use href="#i-wa"/></svg>Enviar consulta por WhatsApp</a>
+    <small style="color:#CFE3E5">Estimado referencial. El anfitrión confirma disponibilidad y precio final.</small>
+   </form>
+  </div>
+ </div>
+</section>
+
+<section class="band" id="ubicacion">
+ <div class="wrap">
+  <h2>En Punta Negra, cerca de todo</h2>
+  <div class="loc">
+   <ul class="dist">
+    <li><svg><use href="#i-walk"/></svg><div><b>5 minutos a pie de Playa El Revés</b><span>Y unos 10 minutos de Playa Bikini.</span></div></li>
+    <li><svg><use href="#i-road"/></svg><div><b>Acceso por la Panamericana Sur</b><span>Aproximadamente una hora desde Lima, según el tráfico.</span></div></li>
+    <li><svg><use href="#i-pin"/></svg><div><b>Punta Negra, Lima Sur</b><span>Cerca de Punta Hermosa y San Bartolo. La dirección exacta se envía al confirmar la reserva.</span></div></li>
+    <li><svg><use href="#i-car"/></svg><div><b>Estacionamiento</b><span>Cochera techada y espacio frente a la casa.</span></div></li>
+   </ul>
+   <img src="img/terraza-vista.jpg" alt="Vista de la terraza superior con toldo y parrilla al fondo" loading="lazy">
+  </div>
+  <div class="cta"><a class="btn ab" href="https://www.google.com/maps/search/?api=1&query=Punta+Negra+Lima+Peru"><svg class="ico"><use href="#i-pin"/></svg>Ver Punta Negra en Google Maps</a></div>
+ </div>
+</section>
+
+<section class="band alt" id="opiniones">
+ <div class="wrap">
+  <h2>Lo que dicen los huéspedes</h2>
+  <div class="cols">
+   <div class="panel">
+    <div class="score"><b>4.76 ★</b><span>de 5 · 25 reseñas de la casa en Airbnb</span></div>
+    <div class="bars" id="bars"></div>
+    <p class="note">Como anfitrión, Willy suma 97 evaluaciones en Airbnb, con 4.8 ★ y 9 años de experiencia. Datos de Airbnb a noviembre de 2026.</p>
+   </div>
+   <div class="panel">
+    <div class="host"><div class="av">W</div><div><h3>Willy, su anfitrión</h3><span style="color:var(--soft)">Propietario de la casa</span></div></div>
+    <p>Recibo personalmente a cada grupo, le explico cómo funciona la casa y estoy disponible por WhatsApp durante toda la estadía. Si no puedo estar, le recibe la persona de mantenimiento, que conoce la casa al detalle.</p>
+    <div class="cta"><a class="btn wa js-wa" href="#"><svg class="ico"><use href="#i-wa"/></svg>Escribir a Willy</a></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="band" id="normas">
+ <div class="wrap">
+  <h2>Antes de reservar</h2>
+  <div class="cols">
+   <div class="panel"><h3>Horarios</h3><ul><li>Llegada desde la 1:00 p. m.</li><li>Salida hasta la 1:00 p. m.</li><li>Horarios distintos, previa coordinación.</li></ul></div>
+   <div class="panel"><h3>Normas de la casa</h3><ul><li>Máximo 18 huéspedes, todos registrados en la reserva.</li><li>Visitas y celebraciones solo con autorización previa.</li><li>No se fuma dentro de la casa; en exteriores sí.</li><li>Mascotas bienvenidas, previa coordinación.</li><li>Niños en la piscina siempre con un adulto; no vidrio junto a la piscina.</li><li>Respetar el descanso de los vecinos.</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section class="band alt" id="preguntas">
+ <div class="wrap">
+  <h2>Preguntas frecuentes</h2>
+  <div class="faq" id="faq"></div>
+ </div>
+</section>
+
+<section class="band deep close">
+ <div class="wrap">
+  <h2>Separe sus fechas para el verano</h2>
+  <p class="lead" style="margin-inline:auto">Diciembre, enero y febrero se llenan primero. Escríbanos con sus fechas y el número de personas, y le respondemos con disponibilidad y precio.</p>
+  <div class="cta"><a class="btn wa js-wa" href="#"><svg class="ico"><use href="#i-wa"/></svg>WhatsApp +51 982 254 662</a><button class="btn ghost" id="share" type="button">Copiar enlace para compartir</button></div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <span><b>Casa de playa Los Corales 387</b> · Punta Negra, Lima, Perú</span>
+  <span>Reservas: +51 982 254 662 · wcornejoc@gmail.com</span>
+ </div>
+</footer>
+
+<div class="bar-m"><div><b>Desde S/ 650 / noche</b>Casa completa · hasta 18</div><a class="btn wa js-wa" href="#"><svg class="ico"><use href="#i-wa"/></svg>Reservar</a></div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+ <img id="lbImg" alt="">
+ <p id="lbCap"></p>
+ <div class="ctl"><button type="button" id="prev" aria-label="Foto anterior">‹</button><button type="button" id="close">Cerrar</button><button type="button" id="next" aria-label="Foto siguiente">›</button></div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+{
+/* ======= CONFIGURACIÓN: edite solo estas líneas ======= */
+const WHATSAPP = "51982254662";
+const AIRBNB_URL = ""; /* pegue aquí el enlace de su anuncio de Airbnb para mostrar el botón */
+/* Tarifas directas por noche: [dom-jue, vie-sáb, mínimo de noches], por mes (1 = enero) */
+const RATES = {11:[540,720,2],12:[780,1130,2],1:[860,1180,2],2:[860,1180,2],3:[860,1180,2],4:[650,800,2]};
+const INCLUDED = 10, EXTRA = 45; /* huéspedes incluidos y S/ por persona adicional por noche */
+/* ====================================================== */
+
+const msg = t => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t)}`;
+const base = "Hola Willy, vi la web de la casa Los Corales 387 en Punta Negra y quisiera consultar disponibilidad.";
+document.querySelectorAll(".js-wa").forEach(a => a.href = msg(base));
+if (AIRBNB_URL) document.querySelectorAll(".js-ab").forEach(a => { a.href = AIRBNB_URL; a.hidden = false; });
+
+const PHOTOS = [
+ ["hero-piscina","Piscina privada","piscina"],["piscina-2","Piscina y escalera a la terraza","piscina"],["piscina-3","Piscina vista desde arriba","piscina"],["piscina-4","Zona de piscina","piscina"],
+ ["terraza-mar","Terraza con vista al mar","terraza"],["terraza-lounge","Lounge bajo la pérgola","terraza"],["parrilla","Parrilla y mesón","terraza"],["terraza-pergola","Pérgola y vista al mar","terraza"],["terraza-bbq","Zona de parrilla","terraza"],["terraza-vista","Terraza superior","terraza"],
+ ["comedor","Comedor principal","interiores"],["sala","Sala con biblioteca y juegos","interiores"],["sala-2","Sala y comedor","interiores"],["cocina","Cocina equipada","interiores"],["cocina-2","Cocina con barra","interiores"],["bano","Baño completo","interiores"],["bano-visita","Baño de visita","interiores"],
+ ["hab1","Dormitorio 1","dormitorios"],["hab1-b","Dormitorio 1","dormitorios"],["hab2","Dormitorio 2","dormitorios"],["hab3","Dormitorio 3","dormitorios"],["hab4","Dormitorio 4","dormitorios"],["hab4-b","Dormitorio 4","dormitorios"],["hab5","Dormitorio 5","dormitorios"],["hab5-b","Dormitorio 5","dormitorios"],
+ ["jardin","Jardín interior","exteriores"],["jardin-2","Ingreso y jardín","exteriores"],["fachada","Fachada","exteriores"]
+];
+const CATS = [["todo","Todas"],["piscina","Piscina"],["terraza","Terraza y parrilla"],["interiores","Sala, cocina y baños"],["dormitorios","Dormitorios"],["exteriores","Jardín y fachada"]];
+const tabs = document.getElementById("tabs"), grid = document.getElementById("grid");
+let shown = PHOTOS, cur = 0;
+tabs.innerHTML = CATS.map(([k,l],i)=>`<button type="button" data-k="${k}" aria-pressed="${i===0}">${l}</button>`).join("");
+const render = k => {
+ shown = k==="todo" ? PHOTOS : PHOTOS.filter(p=>p[2]===k);
+ grid.innerHTML = shown.map((p,i)=>`<button type="button" data-i="${i}" aria-label="Ampliar: ${p[1]}"><img src="img/${p[0]}.jpg" alt="${p[1]}" loading="lazy"></button>`).join("");
+};
+render("todo");
+tabs.addEventListener("click", e => { const b=e.target.closest("button"); if(!b) return;
+ tabs.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed", x===b)); render(b.dataset.k); });
+
+const lb=document.getElementById("lb"), lbImg=document.getElementById("lbImg"), lbCap=document.getElementById("lbCap");
+const show = i => { cur=(i+shown.length)%shown.length; lbImg.src=`img/${shown[cur][0]}.jpg`; lbImg.alt=shown[cur][1]; lbCap.textContent=`${shown[cur][1]} · ${cur+1} de ${shown.length}`; };
+grid.addEventListener("click", e => { const b=e.target.closest("button"); if(!b) return; show(+b.dataset.i); lb.classList.add("on"); document.getElementById("close").focus(); });
+const closeLb = () => lb.classList.remove("on");
+document.getElementById("close").onclick = closeLb;
+document.getElementById("prev").onclick = () => show(cur-1);
+document.getElementById("next").onclick = () => show(cur+1);
+lb.addEventListener("click", e => { if(e.target===lb) closeLb(); });
+document.addEventListener("keydown", e => { if(!lb.classList.contains("on")) return;
+ if(e.key==="Escape") closeLb(); if(e.key==="ArrowLeft") show(cur-1); if(e.key==="ArrowRight") show(cur+1); });
+
+const ROOMS = [
+ ["hab1","Dormitorio 1","Primer piso","1 cama de 2 plazas, 1 cama extensible y 1 camarote de 1½ plaza","Hasta 5","Baño privado"],
+ ["hab2","Dormitorio 2","Primer piso","1 cama de 2 plazas y 1 cama extensible","Hasta 3","Baño privado"],
+ ["hab3","Dormitorio 3","Primer piso","1 cama de 2 plazas y 1 cama extensible","Hasta 3","Baño privado"],
+ ["hab4","Dormitorio 4","Segundo piso","1 cama de 2 plazas y 1 cama extensible","Hasta 3","Baño privado"],
+ ["hab5","Dormitorio 5","Segundo piso","2 camarotes de 1½ plaza","Hasta 4","Baño completo al lado"]
+];
+document.getElementById("rooms").innerHTML = ROOMS.map(r=>`<article class="room"><img src="img/${r[0]}.jpg" alt="${r[1]}" loading="lazy"><div><span class="pill">${r[4]} personas</span><h3>${r[1]}</h3><small>${r[2]} · ${r[5]}</small><span>${r[3]}</span></div></article>`).join("");
+
+
+const SCORES = [["Limpieza",4.8],["Exactitud",4.8],["Llegada",4.9],["Comunicación",4.8],["Ubicación",4.8],["Calidad-precio",4.8]];
+document.getElementById("bars").innerHTML = SCORES.map(([l,v])=>`<div class="bar"><span>${l}</span><i><u style="width:${v/5*100}%"></u></i><em>${v.toFixed(1)}</em></div>`).join("");
+
+const FAQ = [
+ ["¿La casa está frente al mar?","No está en primera fila. Está a unos 5 minutos caminando de Playa El Revés, y desde la terraza del segundo piso se ve el mar."],
+ ["¿Cuántas personas pueden alojarse?","Hasta 18 huéspedes en 5 dormitorios. La tarifa por noche incluye 10 huéspedes; desde el huésped 11 se suman S/ 45 por persona por noche."],
+ ["¿Cuál es la estadía mínima?","2 noches en cualquier época del año."],
+ ["¿Cómo se reserva y se paga?","Escríbanos por WhatsApp con sus fechas y número de personas. Le confirmamos disponibilidad, precio y forma de pago para separar la fecha."],
+ ["¿Se aceptan mascotas?","Sí, previa coordinación al momento de reservar."],
+ ["¿Hay estacionamiento?","Sí: una cochera techada y espacio adicional frente a la casa."],
+ ["¿Se pueden hacer reuniones o cumpleaños?","Reuniones moderadas con el grupo alojado, sí. Invitados adicionales o eventos, solo con autorización previa."],
+ ["¿Hay Wi-Fi para trabajar?","Sí, Wi-Fi de fibra óptica en la casa, ideal para teletrabajo entre semana."],
+ ["¿Qué debo llevar?","Toallas de playa, secadora de cabello y sus víveres. La casa tiene cocina equipada, ropa de cama y menaje completo."]
+];
+document.getElementById("faq").innerHTML = FAQ.map(([q,a])=>`<details><summary>${q}</summary><p>${a}</p></details>`).join("");
+
+/* cotizador */
+const pax=document.getElementById("pax"), dIn=document.getElementById("in"), dOut=document.getElementById("out"), res=document.getElementById("res"), send=document.getElementById("send");
+pax.innerHTML = Array.from({length:18},(_,i)=>`<option ${i===11?"selected":""}>${i+1}</option>`).join("");
+const iso = d => d.toISOString().slice(0,10);
+const today = new Date(); today.setHours(12);
+dIn.min = iso(today); dOut.min = iso(new Date(+today+864e5));
+const fmt = n => "S/ " + n.toLocaleString("en-US");
+const fmtD = s => new Date(s+"T12:00").toLocaleDateString("es-PE",{day:"numeric",month:"long"});
+const calc = () => {
+ const a=dIn.value, b=dOut.value;
+ let text = base;
+ if(!a||!b){ res.innerHTML='<div class="t">—</div><small>Elija sus fechas para ver el total estimado.</small>'; send.href=msg(base); return; }
+ const start=new Date(a+"T12:00"), end=new Date(b+"T12:00"), n=Math.round((end-start)/864e5);
+ if(n<1){ res.innerHTML='<div class="t">—</div><div class="warn">La salida debe ser posterior a la llegada.</div>'; return; }
+ let total=0, special=false, unknown=false, minN=2;
+ for(let i=0;i<n;i++){
+  const d=new Date(+start+i*864e5), m=d.getMonth()+1, r=RATES[m];
+  if(m===12&&d.getDate()>=30 || m===1&&d.getDate()===1) special=true;
+  if(!r){ unknown=true; continue; }
+  minN=Math.max(minN,r[2]);
+  total += ((d.getDay()===5||d.getDay()===6) ? r[1] : r[0]) + Math.max(0,+pax.value-INCLUDED)*EXTRA;
+ }
+ const disc = n>=30 ? .20 : n>=7 ? .10 : 0;
+ const final = Math.round(total*(1-disc));
+ const p=+pax.value;
+ let html, est;
+ if(unknown){ html='<div class="t">A consultar</div><small>Para estas fechas le enviamos la tarifa por WhatsApp.</small>'; est="tarifa a consultar"; }
+ else {
+  html=`<div class="t">${fmt(final)}</div><small>${n} noche${n>1?"s":""} · ${p} huéspedes${p>INCLUDED?` (incluye ${p-INCLUDED} adicional${p-INCLUDED>1?"es":""})`:""} · aprox. ${fmt(Math.round(final/p/n))} por persona por noche${disc?` · incluye ${disc*100} % de descuento`:""}</small>`;
+  est = fmt(final);
+  if(special) html+='<div class="warn">Incluye Año Nuevo: tarifa especial, el anfitrión le confirma el precio.</div>';
+ }
+ if(n<minN) html+=`<div class="warn">En estas fechas la estadía mínima es de ${minN} noches.</div>`;
+ res.innerHTML=html;
+ text=`Hola Willy, vi la web de Los Corales 387. Quisiera reservar del ${fmtD(a)} al ${fmtD(b)} (${n} noches) para ${p} personas. Estimado de la web: ${est}. ¿Está disponible?`;
+ send.href=msg(text);
+};
+dIn.addEventListener("change",()=>{ if(dIn.value){ const nx=new Date(dIn.value+"T12:00"); nx.setDate(nx.getDate()+1); dOut.min=iso(nx); if(!dOut.value||dOut.value<=dIn.value){ nx.setDate(nx.getDate()+1); dOut.value=iso(nx);} } calc(); });
+dOut.addEventListener("change",calc); pax.addEventListener("change",calc);
+calc();
+
+const toast=document.getElementById("toast");
+document.getElementById("share").addEventListener("click", async () => {
+ try { await navigator.clipboard.writeText(location.href.split("#")[0]); toast.textContent="Enlace copiado"; }
+ catch(e){ toast.textContent="Copie el enlace desde la barra del navegador"; }
+ toast.classList.add("on"); setTimeout(()=>toast.classList.remove("on"),2200);
+});
+}
+</script>
+</body>
+</html>
